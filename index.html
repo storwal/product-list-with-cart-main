@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="blur">
+<div class="wrapper">
+<h1 class="title">Desserts</h1>
+
+
+
+<div class="container">
+  
+<div class="item" product-id="1">
+  <div class="image">
+    <img src="assets/images/image-waffle-desktop.jpg" alt="">
+  </div>
+  <div id="borderBoxRed">
+  </div>
+  <button id="addToCartWaffle"> <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to cart</button>
+  <div class="food-info">
+    <h1>Waffle</h1>
+    <p>Waffle with Berries</p>
+    <h2>6.50$</h2>
+  </div>
+  <div id="plusMinus">
+    <button id="minus">-</button>
+    <span id="number"></span>
+    <button id="plus">+</button>
+  </div>
+</div>
+
+<div class="item" product-id="2">
+  <div class="image">
+    <img src="assets/images/image-creme-brulee-desktop.jpg" alt="">
+  </div>
+  <div id="borderBoxRedCreme">
+  </div>
+  <button id="addToCartCreme"> <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to cart</button>
+  <div class="food-infoCreme">
+    <h1>Crème Brûlée</h1>
+    <p>Vanilla Bean Crème Brûlée</p>
+    <h2>7.00€</h2>
+  </div>
+  <div id="plusMinusCreme">
+    <button id="minusCreme">-</button>
+    <span id="numberCreme"></span>
+    <button id="plusCreme">+</button>
+  </div>
+</div>
+  
+<div class="item" product-id="3">
+  <div class="image">
+    <img src="assets/images/image-macaron-desktop.jpg">
+  </div>
+  <div id="borderBoxRedMacaron">
+  </div>
+  <button id="addToCartMacaron"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoMacaron">
+    <h1>Macaron</h1>
+    <p>Macaron Mix of Five</p>
+    <h2>8.00€</h2>
+  </div>
+  <div id="plusMinusMacaron">
+    <button id="minusMacaron">-</button>
+    <span id="numberMacaron"></span>
+    <button id="plusMacaron">+</button>
+  </div>
+</div> 
+  
+<div class="item" product-id="4">
+  <div class="image">
+    <img src="assets/images/image-tiramisu-desktop.jpg">
+  </div>
+  <div id="borderBoxRedTiramisu">
+  </div>
+  <button id="addToCartTiramisu"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoTiramisu">
+    <h1>Tiramisu</h1>
+    <p>Classic Tiramisu</p>
+    <h2>5.50€</h2>
+  </div>
+  <div id="plusMinusTiramisu">
+    <button id="minusTiramisu">-</button>
+    <span id="numberTiramisu"></span>
+    <button id="plusTiramisu">+</button>
+  </div>
+</div> 
+  
+<div class="item" product-id="5">
+  <div class="image">
+    <img src="assets/images/image-baklava-desktop.jpg">
+  </div>
+  <div id="borderBoxRedBaklava">
+  </div>
+  <button id="addToCartBaklava"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoBaklava">
+    <h1>Baklava</h1>
+    <p>Pistachio Baklava</p>
+    <h2>4.00€</h2>
+  </div>
+  <div id="plusMinusBaklava">
+    <button id="minusBaklava">-</button>
+    <span id="numberBaklava"></span>
+    <button id="plusBaklava">+</button>
+  </div>
+</div>  
+  
+<div class="item" product-id="6">
+  <div class="image">
+    <img src="assets/images/image-meringue-desktop.jpg">
+  </div>
+  <div id="borderBoxRedPie">
+  </div>
+  <button id="addToCartPie"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoPie">
+    <h1>Pie</h1>
+    <p>Lemon Meringue Pie</p>
+    <h2>5.00€</h2>
+  </div>
+  <div id="plusMinusPie">
+    <button id="minusPie">-</button>
+    <span id="numberPie"></span>
+    <button id="plusPie">+</button>
+  </div>
+</div>  
+
+<div class="item" product-id="7">
+  <div class="image">
+    <img src="assets/images/image-cake-desktop.jpg">
+  </div>
+  <div id="borderBoxRedCake">
+  </div>
+  <button id="addToCartCake"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoCake">
+    <h1>Cake</h1>
+    <p>Red Velvet Cake</p>
+    <h2>4.50€</h2>
+  </div>
+  <div id="plusMinusCake">
+    <button id="minusCake">-</button>
+    <span id="numberCake"></span>
+    <button id="plusCake">+</button>
+  </div>
+</div>   
+  
+<div class="item" product-id="8">
+  <div class="image">
+    <img src="assets/images/image-brownie-desktop.jpg">
+  </div>
+  <div id="borderBoxRedBrownie">
+  </div>
+  <button id="addToCartBrownie"> <img src="assets/images/icon-add-to-cart.svg" alt="">  Add to cart</button>
+  <div class="food-infoBrownie">
+    <h1>Brownie</h1>
+    <p>Salted Caramel Brownie</p>
+    <h2>4.50€</h2>
+  </div>
+  <div id="plusMinusBrownie">
+    <button id="minusBrownie">-</button>
+    <span id="numberBrownie"></span>
+    <button id="plusBrownie">+</button>
+  </div>
+</div>  
+  
+<div class="item" product-id="9">
+<div class="image">
+  <img src="assets/images/image-panna-cotta-desktop.jpg" alt="">
+</div>
+<div id="borderBoxRedPanna">
+</div>
+<button id="addToCartPanna"> <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to cart</button>
+<div class="food-infoPanna">
+  <h1>Panna Cotta</h1>
+  <p>Vanilla panna Cotta</p>
+  <h2>6.50€</h2>
+</div>
+<div id="plusMinusPanna">
+  <button id="minusPanna">-</button>
+  <span id="numberPanna"></span>
+  <button id="plusPanna">+</button>
+</div>
+</div>
+
+
+</div> 
+
+<div class="cart">
+  <h1>Your cart </h1>
+<img src="assets/images/illustration-empty-cart.svg" alt="" id="cartImg">
+<p id="yourAddedItems">Your added items will appear here</p>
+<ul class="cart-items"></ul>
+<p id="moneyTotal">Total: $<span class="cart-total">0</span></p>
+<div id="carbon" class="carbon">
+  <img id="carbonImg" src="assets/images/icon-carbon-neutral.svg" alt=""> <p> This is a carbon neutral delivery </p>
+</div>
+<div id="confirmButton" class="confirmButton">
+  <button><p>Confirm Order</p></button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="cartConfirm">
+  <img src="assets/images/icon-order-confirmed.svg" alt="">
+  <h1>Order Confirmed</h1>
+  <p>We hope you enjoy your food</p>
+  <ul class="cartConfirmItems"  id="cartConfirmItems"></ul>
+  <p id="moneyTotalConfirm">Order Total<span class="cart-totalConfirm">0</span></p>
+  <button id="newOrder"><p>Start new Order</p></button>
+</div>
+
+
+
+  
+
+
+  
+
+ <script src="app.js"></script>
+</body>
+</html>

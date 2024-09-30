@@ -1,0 +1,2119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  background-color: hsl(13, 31%, 94%);
+  margin: 100px;
+ max-width: 100%; 
+}
+.wrapper{
+  display: flex;
+ position: relative;
+}
+.wrapper h1{
+  margin-right: -170px;
+}
+.title{
+  font-size: 35px;
+  font-weight: 750;
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+.container{
+  display:grid ;
+  grid-template-columns: 280px 280px 280px;
+ 
+}
+.image{
+  position: relative;
+}
+.image img{
+  width: 240px;
+  height:240px;
+  border-radius: 10px;
+  border: 4px solid hsla(0, 0%, 0%, 0);
+}
+#borderBoxRed{
+  width: 240px;
+  height:240px;
+  border-radius: 10px; 
+  background-color:hsla(0, 0%, 0%, 0) ;
+  position: relative;
+  margin-top: -87%;
+  border: 4px solid hsl(14, 100%, 50%) ;
+  display: none;
+}
+.item button{
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  margin-left: 2.1%;
+  margin-top: -1.8%;
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: white ;
+}
+.food-info h1{
+  font-size: .8rem;
+  margin-top: 30px;
+  margin-right: 18px;
+  color: hsl(12, 20%, 44%);
+}
+.food-info p{
+font-size: .8rem;
+font-weight: 700;
+margin-right: 18px; 
+color: hsl(14, 65%, 9%); 
+margin-top: 5px;
+}
+.food-info h2{
+  font-size: .9rem;
+  color: hsl(14, 86%, 42%);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.cart{
+  background-color: hsl(20, 50%, 98%);
+  flex-direction: row;
+  width: 350px;
+  height: 770px;
+  margin-left: 40px;
+  margin-top: -50px;
+  border-radius: 20px;
+}
+.cart h1{
+  color: hsl(14, 86%, 42%);
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+.cart img{
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 150px;
+  height: 150px;
+}
+.cart p{
+  font-size: .8rem;
+  margin-left: 70px;
+  color: hsl(14, 65%, 9%); 
+  margin-top: 10px;
+  display: block;
+}
+#moneyTotal{
+  font-size: 1.1rem;
+  color: hsl(14, 65%, 9%); 
+}
+.carbon{
+  background-color:hsl(15, 50%, 94%);
+  margin: 10px 40px;
+  height: 40px;
+  width: 270px;
+  border-radius: 15px;
+  display: none;
+}
+#carbonImg{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+.carbon p{
+  margin-top: -25px;
+  font-size: .8rem;
+}
+#confirmButton{
+  display: none;
+}
+#confirmButton button{
+width: 270px;
+height: 45px;
+border-radius: 35px;
+margin: 15px 50px 15px 40px;
+background-color: hsl(14, 80%, 54%);
+border: 2px solid white;
+
+}
+#confirmButton p{
+  color: white;
+  font-size: 1.0rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.cartConfirm{
+  position: absolute;
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  margin-left: 320px;
+  width: 600px;
+  display: none;
+  margin-top: -1000px;
+}
+.cartConfirm h1{
+  font-size: 2.5rem;
+}
+.cartConfirm p{
+ margin-top: 10px; 
+ color: hsl(12, 20%, 44%);
+}
+.cartConfirm li{
+  background-color: rgba(255, 211, 193, 0.08); 
+  margin-left: 0px;
+  margin-bottom: -10px;
+  padding: 5px 10px 10px 65px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+#newOrder{
+  width: 470px;
+  height: 45px;
+  border-radius: 35px;
+  margin: 15px 50px 15px 40px;
+  background-color: hsl(14, 80%, 54%);
+  border: 2px solid white;
+  margin-top: 30px;
+  margin-bottom: -0px;
+}
+#newOrder p{
+  font-size: 1.0rem;
+  color: white; 
+  margin-bottom: 5px;
+}
+
+#moneyTotalConfirm{
+  background-color: rgba(255, 211, 193, 0.08); 
+  margin-left: 0px;
+  margin-bottom: -10px;
+  padding: 5px 10px 10px 65px;
+  display: flex;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.5); 
+  padding: 20px 0px 20px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cart-totalConfirm{
+  margin-left: 300px;
+}
+#plusMinus{
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  margin-left: 2.3%;
+  margin-top: -9.2%;
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: hsl(14, 80%, 54%); 
+  display: none;
+}
+#plusMinus button{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50px;
+  font-size: 1.2rem;;
+  background-color: hsl(14, 86%, 42%);
+  color: white;
+  border: 2px solid white;
+}
+#plusMinus span{
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 6%;
+  color: white;
+}
+#plus{
+margin-left: 80%;
+margin-top: 4%;
+}
+#minus{
+  margin-left: 6%;
+  margin-top: 4%;
+}
+li{
+  margin-left: 10%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+li img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: -40px;
+}
+.waffle-li {
+  border-bottom: 2px solid lightgray;
+  margin-right: 40px;
+}
+.blur{
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.remove-button{
+width: 25px;
+height: 25px;
+border-radius: 20px;
+margin:-23px 0px 10px 250px ;
+background-color: #fff;
+color:hsl(14, 80%, 54%) ;
+border:2px solid hsl(14, 80%, 54%) ;
+}
+
+
+
+
+
+.imageCreme{
+  position: relative;
+}
+.imageCreme img{
+  width: 240px;
+  height:240px;
+  border-radius: 10px;
+  border: 4px solid hsla(0, 0%, 0%, 0);
+}
+#borderBoxRedCreme{
+  width: 240px;
+  height:240px;
+  border-radius: 10px; 
+  background-color:hsla(0, 0%, 0%, 0) ;
+  position: relative;
+  margin-top: -87%;
+  border: 4px solid hsl(14, 100%, 50%) ;
+  display: none;
+}
+.itemCreme button{
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  margin-left: 2.1%;
+  margin-top: -1.8%;
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: white ;
+}
+.food-infoCreme h1{
+  font-size: .8rem;
+  margin-top: 30px;
+  margin-right: 18px;
+  color: hsl(12, 20%, 44%);
+}
+.food-infoCreme p{
+  font-size: .8rem;
+  font-weight: 700;
+  margin-right: 18px; 
+  color: hsl(14, 65%, 9%); 
+  margin-top: 5px;
+  }
+  .food-infoCreme h2{
+    font-size: .9rem;
+    color: hsl(14, 86%, 42%);
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  #plusMinusCreme{
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    margin-left: 2.3%;
+    margin-top: -9.2%;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: hsl(14, 80%, 54%); 
+    display: none;
+  }
+  #plusMinusCreme button{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 1.2rem;;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: 2px solid white;
+  }
+  #plusMinusCreme span{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 6%;
+    color: white;
+  }
+  #plusCreme{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusCreme{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Creme-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }
+
+
+
+
+
+
+    .imageMacaron{
+      position: relative;
+    }
+    .imageMacaron img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedMacaron{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemMacaron button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoMacaron h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoMacaron p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoMacaron h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartMacaron h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartMacaron img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartMacaron p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusMacaron{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusMacaron button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusMacaron span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusMacaron{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusMacaron{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Macaron-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }
+    
+
+
+
+    .imageTiramisu{
+      position: relative;
+    }
+    .imageTiramisu img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedTiramisu{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemTiramisu button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoTiramisu h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoTiramisu p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoTiramisu h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartTiramisu h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartTiramisu img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartTiramisu p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusTiramisu{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusTiramisu button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusTiramisu span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusTiramisu{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusTiramisu{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Tiramisu-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }
+
+
+
+
+
+
+    .imageBaklava{
+      position: relative;
+    }
+    .imageBaklava img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedBaklava{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemBaklava button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoBaklava h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoBaklava p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoBaklava h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartBaklava h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartBaklava img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartBaklava p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusBaklava{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusBaklava button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusBaklava span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusBaklava{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusBaklava{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Baklava-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }
+
+
+
+
+
+
+    .imagePie{
+      position: relative;
+    }
+    .imagePie img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedPie{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemPie button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoPie h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoPie p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoPie h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartPie h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartPie img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartPie p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusPie{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusPie button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusPie span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusPie{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusPie{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Pie-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }   
+
+
+
+
+
+
+    .imageCake{
+      position: relative;
+    }
+    .imageCake img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedCake{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemCake button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoCake h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoCake p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoCake h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartCake h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartCake img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartCake p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusCake{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusCake button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusCake span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusCake{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusCake{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Cake-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }  
+
+
+
+
+
+
+    .imageBrownie{
+      position: relative;
+    }
+    .imageBrownie img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedBrownie{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemBrownie button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoBrownie h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoBrownie p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoBrownie h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartBrownie h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartBrownie img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartBrownie p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusBrownie{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusBrownie button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusBrownie span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusBrownie{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusBrownie{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Brownie-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }  
+
+
+
+
+
+    .imagePanna{
+      position: relative;
+    }
+    .imagePanna img{
+      width: 240px;
+      height:240px;
+      border-radius: 10px;
+      border: 4px solid hsla(0, 0%, 0%, 0);
+    }
+    #borderBoxRedPanna{
+      width: 240px;
+      height:240px;
+      border-radius: 10px; 
+      background-color:hsla(0, 0%, 0%, 0) ;
+      position: relative;
+      margin-top: -87%;
+      border: 4px solid hsl(14, 100%, 50%) ;
+      display: none;
+    }
+    .itemPanna button{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.1%;
+      margin-top: -1.8%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: white ;
+    }
+    .food-infoPanna h1{
+      font-size: .8rem;
+      margin-top: 30px;
+      margin-right: 18px;
+      color: hsl(12, 20%, 44%);
+    }
+    .food-infoPanna p{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-right: 18px; 
+    color: hsl(14, 65%, 9%); 
+    margin-top: 5px;
+    }
+    .food-infoPanna h2{
+      font-size: .9rem;
+      color: hsl(14, 86%, 42%);
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .cartPanna h1{
+      color: hsl(14, 86%, 42%);
+      margin-top: 15px;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+    .cartPanna img{
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .cartPanna p{
+      font-size: .8rem;
+      margin-left: 70px;
+      color: hsl(14, 65%, 9%); 
+      margin-top: 10px;
+      display: block;
+    }
+    #plusMinusPanna{
+      width: 180px;
+      height: 40px;
+      position: absolute;
+      margin-left: 2.3%;
+      margin-top: -9.2%;
+      border-radius: 35px;
+      cursor: pointer;
+      background-color: hsl(14, 80%, 54%); 
+      display: none;
+    }
+    #plusMinusPanna button{
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      border-radius: 50px;
+      font-size: 1.2rem;;
+      background-color: hsl(14, 86%, 42%);
+      color: white;
+      border: 2px solid white;
+    }
+    #plusMinusPanna span{
+      position: absolute;
+      margin-left: 50%;
+      margin-top: 6%;
+      color: white;
+    }
+    #plusPanna{
+    margin-left: 80%;
+    margin-top: 4%;
+    }
+    #minusPanna{
+      margin-left: 6%;
+      margin-top: 4%;
+    }
+    .Panna-li {
+      border-bottom: 2px solid lightgray;
+      margin-right: 40px;
+    }  
+
+
+
+    @media only screen and (max-width: 1024px){
+     
+      body{
+        margin: 70px;
+      }
+     
+      .wrapper h1{
+        margin-right: -130px;
+      }
+      .title{
+        font-size: 29px;
+      }
+      .container{
+        display:grid ;
+        grid-template-columns: 210px 210px 210px;
+       
+      }
+      .image{
+        position: relative;
+      }
+      .image img{
+        width: 190px;
+        height:190px;
+        
+      }
+      #borderBoxRed{
+        width: 190px;
+        height:190px;
+        margin-top: -92.5%;
+      }
+      .item button{
+        width: 120px;
+        height: 35px;
+        margin-left: 3.9%;
+        margin-top: -2.9%;
+      }
+      .food-info h1{
+        margin-top: 20px;
+        margin-right: 0px;
+      }
+      .food-info p{
+      margin-right: 0px; 
+      margin-top: 5px;
+      }
+      .food-info h2{
+        margin-bottom: 15px;
+      }
+      .cart{
+        width: 225px;
+        margin-top: 0px;
+      }
+      .cart h1{
+        font-size: 1.5rem;
+      }
+      .cart img{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 120px;
+        height: 120px;
+      }
+      .cart p{
+        font-size: 0.8rem;
+        margin-left: 5px;
+        margin-top: 10px;
+        text-align: center;
+      }
+      #moneyTotal{
+        font-size: 1.0rem;
+      }
+      .carbon{
+        margin: 15px 25px;
+        height: 35px;
+        width: 180px;
+      }
+      #carbonImg{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+      .carbon p{
+        margin-top: -25px;
+        font-size: .75rem;
+        margin-left: 18px;
+      }
+      #confirmButton button{
+      width: 180px;
+      height: 40px;
+      margin: 0px 50px 15px 25px;
+      
+      }
+      .cartConfirm{
+        margin-left: 140px;
+        margin-top: -800px;
+      }
+      #plusMinus{
+        width: 120px;
+        height: 35px;
+        margin-left: 3.9%;
+        margin-top: -12.8%;
+      }
+      #plusMinus button{
+        width: 20px;
+        height: 20px;
+        font-size: 1.0rem;
+      }
+      #plusMinus span{
+        margin-left: 50%;
+        margin-top: 7%;
+      }
+      #plus{
+      margin-left: 78%;
+      margin-top: 7%;
+      }
+      #minus{
+        margin-left: 7%;
+        margin-top: 7%;
+      }
+      li{
+        margin-left: 9%;
+      }
+      .remove-button{
+      width: 25px;  
+      height: 25px;
+      border-radius: 20px;
+      margin:-23px 0px 10px 165px ;
+      background-color:white ;
+      border:2px solid hsl(14, 80%, 54%) ;
+      }
+    
+
+
+
+
+
+   
+    #borderBoxRedCreme{
+      width: 190px;
+      height:190px;
+      margin-top: -92.5%;
+    }
+    .food-infoCreme h1{
+      margin-top: 20px;
+        margin-right: 0px;
+    }
+    .food-infoCreme p{
+      margin-right: 0px; 
+      margin-top: 5px;
+      }
+      .food-infoCreme h2{
+        margin-bottom: 15px;
+      }
+      #plusMinusCreme{
+        width: 120px;
+        height: 35px;
+        margin-left: 3.9%;
+        margin-top: -12.8%;
+      }
+      #plusMinusCreme button{
+        width: 20px;
+        height: 20px;
+        font-size: 1.0rem;
+      }
+      #plusMinusCreme span{
+        margin-left: 50%;
+        margin-top: 7%;
+      }
+      #plusCreme{
+        margin-left: 78%;
+        margin-top: 7%;
+        }
+        #minusCreme{
+        margin-left: 7%;
+        margin-top: 7%;
+        }
+    
+    
+
+
+        #borderBoxRedMacaron{
+          width: 190px;
+          height:190px;
+          margin-top: -92.5%;
+        }
+        .food-infoMacaron h1{
+          margin-top: 20px;
+            margin-right: 0px;
+        }
+        .food-infoMacaron p{
+          margin-right: 0px; 
+          margin-top: 5px;
+          }
+          .food-infomacaron h2{
+            margin-bottom: 15px;
+          }
+          #plusMinusMacaron{
+            width: 120px;
+            height: 35px;
+            margin-left: 3.9%;
+            margin-top: -13.4%;
+          }
+          #plusMinusMacaron button{
+            width: 20px;
+            height: 20px;
+            font-size: 1.0rem;
+          }
+          #plusMinusMacaron span{
+            margin-left: 50%;
+            margin-top: 7%;
+          }
+          #plusMacaron{
+            margin-left: 78%;
+            margin-top: 7%;
+            }
+            #minusMacaron{
+            margin-left: 7%;
+            margin-top: 7%;
+            }
+
+
+
+
+            #borderBoxRedTiramisu{
+              width: 190px;
+              height:190px;
+              margin-top: -92.5%;
+            }
+            .food-infoTiramisu h1{
+              margin-top: 20px;
+                margin-right: 0px;
+            }
+            .food-infoTiramisu p{
+              margin-right: 0px; 
+              margin-top: 5px;
+              }
+              .food-infoTiramisu h2{
+                margin-bottom: 15px;
+              }
+              #plusMinusTiramisu{
+                width: 120px;
+                height: 35px;
+                margin-left: 3.9%;
+                margin-top: -12.8%;
+              }
+              #plusMinusTiramisu button{
+                width: 20px;
+                height: 20px;
+                font-size: 1.0rem;
+              }
+              #plusMinusTiramisu span{
+                margin-left: 50%;
+                margin-top: 7%;
+              }
+              #plusTiramisu{
+                margin-left: 78%;
+                margin-top: 7%;
+                }
+                #minusTiramisu{
+                margin-left: 7%;
+                margin-top: 7%;
+                }
+
+
+
+
+                #borderBoxRedBaklava{
+                  width: 190px;
+                  height:190px;
+                  margin-top: -92.5%;
+                }
+                .food-infoBaklava h1{
+                  margin-top: 20px;
+                    margin-right: 0px;
+                }
+                .food-infoBaklava p{
+                  margin-right: 0px; 
+                  margin-top: 5px;
+                  }
+                  .food-infoBaklava h2{
+                    margin-bottom: 15px;
+                  }
+                  #plusMinusBaklava{
+                    width: 120px;
+                    height: 35px;
+                    margin-left: 3.9%;
+                    margin-top: -12.8%;
+                  }
+                  #plusMinusBaklava button{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 1.0rem;
+                  }
+                  #plusMinusBaklava span{
+                    margin-left: 50%;
+                    margin-top: 7%;
+                  }
+                  #plusBaklava{
+                    margin-left: 78%;
+                    margin-top: 7%;
+                    }
+                    #minusBaklava{
+                    margin-left: 7%;
+                    margin-top: 7%;
+                    }
+
+
+
+
+
+                    #borderBoxRedPie{
+                      width: 190px;
+                      height:190px;
+                      margin-top: -92.5%;
+                    }
+                    .food-infoPie h1{
+                      margin-top: 20px;
+                        margin-right: 0px;
+                    }
+                    .food-infoPie p{
+                      margin-right: 0px; 
+                      margin-top: 5px;
+                      }
+                      .food-infoPie h2{
+                        margin-bottom: 15px;
+                      }
+                      #plusMinusPie{
+                        width: 120px;
+                        height: 35px;
+                        margin-left: 3.9%;
+                        margin-top: -12.8%;
+                      }
+                      #plusMinusPie button{
+                        width: 20px;
+                        height: 20px;
+                        font-size: 1.0rem;
+                      }
+                      #plusMinusPie span{
+                        margin-left: 50%;
+                        margin-top: 7%;
+                      }
+                      #plusPie{
+                        margin-left: 78%;
+                        margin-top: 7%;
+                        }
+                        #minusPie{
+                        margin-left: 7%;
+                        margin-top: 7%;
+                        }
+
+
+
+
+                        #borderBoxRedCake{
+                          width: 190px;
+                          height:190px;
+                          margin-top: -92.5%;
+                        }
+                        .food-infoCake h1{
+                          margin-top: 20px;
+                            margin-right: 0px;
+                        }
+                        .food-infoCake p{
+                          margin-right: 0px; 
+                          margin-top: 5px;
+                          }
+                          .food-infoCake h2{
+                            margin-bottom: 15px;
+                          }
+                          #plusMinusCake{
+                            width: 120px;
+                            height: 35px;
+                            margin-left: 3.9%;
+                            margin-top: -12.8%;
+                          }
+                          #plusMinusCake button{
+                            width: 20px;
+                            height: 20px;
+                            font-size: 1.0rem;
+                          }
+                          #plusMinusCake span{
+                            margin-left: 50%;
+                            margin-top: 7%;
+                          }
+                          #plusCake{
+                            margin-left: 78%;
+                            margin-top: 7%;
+                            }
+                            #minusCake{
+                            margin-left: 7%;
+                            margin-top: 7%;
+                            }
+
+
+
+
+
+
+
+                        #borderBoxRedBrownie{
+                          width: 190px;
+                          height:190px;
+                          margin-top: -92.5%;
+                        }
+                        .food-infoBrownie h1{
+                          margin-top: 20px;
+                            margin-right: 0px;
+                        }
+                        .food-infoBrownie p{
+                          margin-right: 0px; 
+                          margin-top: 5px;
+                          }
+                          .food-infoBrownie h2{
+                            margin-bottom: 15px;
+                          }
+                          #plusMinusBrownie{
+                            width: 120px;
+                            height: 35px;
+                            margin-left: 3.9%;
+                            margin-top: -12.8%;
+                          }
+                          #plusMinusBrownie button{
+                            width: 20px;
+                            height: 20px;
+                            font-size: 1.0rem;
+                          }
+                          #plusMinusBrownie span{
+                            margin-left: 50%;
+                            margin-top: 7%;
+                          }
+                          #plusBrownie{
+                            margin-left: 78%;
+                            margin-top: 7%;
+                            }
+                            #minusBrownie{
+                            margin-left: 7%;
+                            margin-top: 7%;
+                            }
+
+
+
+                            #borderBoxRedPanna{
+                              width: 190px;
+                              height:190px;
+                              margin-top: -92.5%;
+                            }
+                            .food-infoPanna h1{
+                              margin-top: 20px;
+                                margin-right: 0px;
+                            }
+                            .food-infoPanna p{
+                              margin-right: 0px; 
+                              margin-top: 5px;
+                              }
+                              .food-infoPanna h2{
+                                margin-bottom: 15px;
+                              }
+                              #plusMinusPanna{
+                                width: 120px;
+                                height: 35px;
+                                margin-left: 3.9%;
+                                margin-top: -12.8%;
+                              }
+                              #plusMinusPanna button{
+                                width: 20px;
+                                height: 20px;
+                                font-size: 1.0rem;
+                              }
+                              #plusMinusPanna span{
+                                margin-left: 50%;
+                                margin-top: 7%;
+                              }
+                              #plusPanna{
+                                margin-left: 78%;
+                                margin-top: 7%;
+                                }
+                                #minusPanna {
+                                margin-left: 7%;
+                                margin-top: 7%;
+                                }
+                              }
+
+
+
+@media only screen and (max-width: 768px){
+
+  body{
+    margin: 30px;
+    max-width: 768px;
+  }
+  .wrapper h1{
+    margin-right: -130px;
+  }
+  .title{
+    font-size: 29px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  .container{
+    display:grid ;
+    grid-template-columns: 180px 180px 180px;
+  }
+  .image{
+    margin-top: 20px;
+  }
+  .image img{
+    width: 160px;
+    height:160px;
+    border-radius: 10px;
+    border: 4px solid hsla(0, 0%, 0%, 0);
+  }
+  #borderBoxRed{
+    width: 160px;
+    height:160px;
+    margin-top: -92.5%;
+  }
+  .item button{
+    width: 120px;
+    height: 35px;
+    margin-left: 3.0%;
+    margin-top: -2.9%;
+  }
+  .food-info h1{
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .food-info p{
+  margin-right: 0px; 
+  margin-top: 5px;
+  }
+  .food-info h2{
+    margin-bottom: 15px;
+  }
+  .cart{
+    background-color: hsl(20, 50%, 98%);
+    flex-direction: row;
+   max-width: 228px;
+    height: 770px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    margin-right: 0;
+  }
+  .cart h1{
+    color: hsl(14, 86%, 42%);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.6rem;
+  }
+  .cart img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  .cart p{
+    font-size: .8rem;
+    margin-left: 10px;
+    color: hsl(14, 65%, 9%); 
+    margin-top: 10px;
+    display: block;
+  }
+  #moneyTotal{
+    font-size: 0.9rem;
+    color: hsl(14, 65%, 9%); 
+    margin-left: -5px;
+  }
+  .carbon{
+    margin: 15px 25px;
+        height: 35px;
+        width: 170px;
+  }
+  #carbonImg{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 6px;
+  }
+  .carbon p{
+    margin-top: -25px;
+    font-size: .75rem;
+    margin-left: 18px;
+  }
+  #confirmButton button{
+  width: 170px;
+  height: 40px;
+  margin: 0px 50px 15px 25px;
+  }
+  #confirmButton p{
+    color: white;
+    font-size: 1.0rem;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .cartConfirm{
+    padding: 30px 30px;
+    min-height: 30vh;
+    margin-left: 180px;
+    margin-top: -800px;
+  }
+  #plusMinus{
+    width: 120px;
+    height: 35px;
+    margin-left: 3.0%;
+    margin-top: -14.9%;
+  }
+  #plusMinus button{
+    width: 20px;
+    height: 20px;
+    font-size: 1.0rem;
+  }
+  #plusMinus span{
+    margin-left: 50%;
+    margin-top: 7%;
+  }
+  #plus{
+    margin-left: 78%;
+    margin-top: 7%;
+    }
+    #minus{
+      margin-left: 7%;
+      margin-top: 7%;
+    }
+  li{
+    margin-left: 7%;
+    margin-top: 2%;
+  }
+  .waffle-li {
+    margin-right: 10px;
+  }
+  .remove-button{
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  margin:-23px 0px 10px 150px ;
+  }
+
+
+
+
+
+
+
+ #borderBoxRedCreme{
+  width: 160px;
+  height:160px;
+  margin-top: -92.5%;
+}
+.food-infoCreme h1{
+  margin-top: 20px;
+  margin-right: 0px;
+}
+.food-infoCreme p{
+margin-right: 0px; 
+margin-top: 5px;
+}
+.food-infoCreme h2{
+  margin-bottom: 15px;
+}
+#plusMinusCreme{
+  width: 120px;
+  height: 35px;
+  margin-left: 3.0%;
+  margin-top: -14.9%;
+}
+#plusMinusCreme button{
+  width: 20px;
+  height: 20px;
+  font-size: 1.0rem;
+}
+#plusMinusCreme span{
+  margin-left: 50%;
+  margin-top: 7%;
+}
+#plusCreme{
+  margin-left: 78%;
+  margin-top: 7%;
+  }
+  #minusCreme{
+    margin-left: 7%;
+    margin-top: 7%;
+  }
+
+
+
+
+  #borderBoxRedMacaron{
+    width: 160px;
+    height:160px;
+    margin-top: -92.5%;
+  }
+  .food-infoMacaron h1{
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .food-infoMacaron p{
+  margin-right: 0px; 
+  margin-top: 5px;
+  }
+  .food-infoMacaron h2{
+    margin-bottom: 15px;
+  }
+  #plusMinusMacaron{
+    width: 120px;
+    height: 35px;
+    margin-left: 3.0%;
+    margin-top: -14.9%;
+  }
+  #plusMinusMacaron button{
+    width: 20px;
+    height: 20px;
+    font-size: 1.0rem;
+  }
+  #plusMinusMacaron span{
+    margin-left: 50%;
+    margin-top: 7%;
+  }
+  #plusMacaron{
+    margin-left: 78%;
+    margin-top: 7%;
+    }
+    #minusMacaron{
+      margin-left: 7%;
+      margin-top: 7%;
+    }
+
+
+
+
+
+    #borderBoxRedTiramisu{
+      width: 160px;
+      height:160px;
+      margin-top: -91%;
+    }
+    .food-infoTiramisu h1{
+      margin-top: 20px;
+      margin-right: 0px;
+    }
+    .food-infoTiramisu p{
+    margin-right: 0px; 
+    margin-top: 5px;
+    }
+    .food-infoTiramisu h2{
+      margin-bottom: 15px;
+    }
+    #plusMinusTiramisu{
+      width: 120px;
+      height: 35px;
+      margin-left: 3.0%;
+      margin-top: -14.9%;
+    }
+    #plusMinusTiramisu button{
+      width: 20px;
+      height: 20px;
+      font-size: 1.0rem;
+    }
+    #plusMinusTiramisu span{
+      margin-left: 50%;
+      margin-top: 7%;
+    }
+    #plusTiramisu{
+      margin-left: 78%;
+      margin-top: 7%;
+      }
+      #minusTiramisu{
+        margin-left: 7%;
+        margin-top: 7%;
+      }
+
+
+
+
+      #borderBoxRedBaklava{
+        width: 160px;
+        height:160px;
+        margin-top: -91%;
+      }
+      .food-infoBaklava h1{
+        margin-top: 20px;
+        margin-right: 0px;
+      }
+      .food-infoBaklava p{
+      margin-right: 0px; 
+      margin-top: 5px;
+      }
+      .food-infoBaklava h2{
+        margin-bottom: 15px;
+      }
+      #plusMinusBaklava{
+        width: 120px;
+        height: 35px;
+        margin-left: 3.0%;
+        margin-top: -14.9%;
+      }
+      #plusMinusBaklava button{
+        width: 20px;
+        height: 20px;
+        font-size: 1.0rem;
+      }
+      #plusMinusBaklava span{
+        margin-left: 50%;
+        margin-top: 7%;
+      }
+      #plusBaklava{
+        margin-left: 78%;
+        margin-top: 7%;
+        }
+        #minusBaklava{
+          margin-left: 7%;
+          margin-top: 7%;
+        }
+
+
+
+        #borderBoxRedPie{
+          width: 160px;
+          height:160px;
+          margin-top: -91%;
+        }
+        .food-infoPie h1{
+          margin-top: 20px;
+          margin-right: 0px;
+        }
+        .food-infoPie p{
+        margin-right: 0px; 
+        margin-top: 5px;
+        }
+        .food-infoPie h2{
+          margin-bottom: 15px;
+        }
+        #plusMinusPie{
+          width: 120px;
+          height: 35px;
+          margin-left: 3.0%;
+          margin-top: -14.9%;
+        }
+        #plusMinusPie button{
+          width: 20px;
+          height: 20px;
+          font-size: 1.0rem;
+        }
+        #plusMinusPie span{
+          margin-left: 50%;
+          margin-top: 7%;
+        }
+        #plusPie{
+          margin-left: 78%;
+          margin-top: 7%;
+          }
+          #minusPie{
+            margin-left: 7%;
+            margin-top: 7%;
+          }
+
+
+
+
+          #borderBoxRedCake{
+            width: 160px;
+            height:160px;
+            margin-top: -91%;
+          }
+          .food-infoCake h1{
+            margin-top: 20px;
+            margin-right: 0px;
+          }
+          .food-infoCake p{
+          margin-right: 0px; 
+          margin-top: 5px;
+          }
+          .food-infoCake h2{
+            margin-bottom: 15px;
+          }
+          #plusMinusCake{
+            width: 120px;
+            height: 35px;
+            margin-left: 3.0%;
+            margin-top: -14.9%;
+          }
+          #plusMinusCake button{
+            width: 20px;
+            height: 20px;
+            font-size: 1.0rem;
+          }
+          #plusMinusCake span{
+            margin-left: 50%;
+            margin-top: 7%;
+          }
+          #plusCake{
+            margin-left: 78%;
+            margin-top: 7%;
+            }
+            #minusCake{
+              margin-left: 7%;
+              margin-top: 7%;
+            }
+
+
+
+
+
+
+            #borderBoxRedBrownie{
+              width: 160px;
+              height:160px;
+              margin-top: -91%;
+            }
+            .food-infoBrownie h1{
+              margin-top: 20px;
+              margin-right: 0px;
+            }
+            .food-infoBrownie p{
+            margin-right: 0px; 
+            margin-top: 5px;
+            }
+            .food-infoBrownie h2{
+              margin-bottom: 15px;
+            }
+            #plusMinusBrownie{
+              width: 120px;
+              height: 35px;
+              margin-left: 3.0%;
+              margin-top: -14.9%;
+            }
+            #plusMinusBrownie button{
+              width: 20px;
+              height: 20px;
+              font-size: 1.0rem;
+            }
+            #plusMinusBrownie span{
+              margin-left: 50%;
+              margin-top: 7%;
+            }
+            #plusBrownie{
+              margin-left: 78%;
+              margin-top: 7%;
+              }
+              #minusBrownie{
+                margin-left: 7%;
+                margin-top: 7%;
+              }
+
+
+
+
+              
+            #borderBoxRedPanna{
+              width: 160px;
+              height:160px;
+              margin-top: -91%;
+            }
+            .food-infoPanna h1{
+              margin-top: 20px;
+              margin-right: 0px;
+            }
+            .food-infoPanna p{
+            margin-right: 0px; 
+            margin-top: 5px;
+            }
+            .food-infoPanna h2{
+              margin-bottom: 15px;
+            }
+            #plusMinusPanna{
+              width: 120px;
+              height: 35px;
+              margin-left: 3.0%;
+              margin-top: -14.9%;
+            }
+            #plusMinusPanna button{
+              width: 20px;
+              height: 20px;
+              font-size: 1.0rem;
+            }
+            #plusMinusPanna span{
+              margin-left: 50%;
+              margin-top: 7%;
+            }
+            #plusPanna{
+              margin-left: 78%;
+              margin-top: 7%;
+              }
+              #minusPanna{
+                margin-left: 7%;
+                margin-top: 7%;
+              }
+  }
